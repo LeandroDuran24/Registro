@@ -38,12 +38,12 @@
             this.CuadrodataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CuadrodataGridView1.Location = new System.Drawing.Point(12, 22);
             this.CuadrodataGridView1.Name = "CuadrodataGridView1";
-            this.CuadrodataGridView1.Size = new System.Drawing.Size(350, 227);
+            this.CuadrodataGridView1.Size = new System.Drawing.Size(428, 227);
             this.CuadrodataGridView1.TabIndex = 0;
             // 
             // ver
             // 
-            this.ver.Location = new System.Drawing.Point(137, 255);
+            this.ver.Location = new System.Drawing.Point(188, 255);
             this.ver.Name = "ver";
             this.ver.Size = new System.Drawing.Size(75, 23);
             this.ver.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 286);
+            this.ClientSize = new System.Drawing.Size(452, 286);
             this.Controls.Add(this.ver);
             this.Controls.Add(this.CuadrodataGridView1);
             this.Name = "Consultas";

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Categoria.Properties
+namespace MenuPrincipal.Properties
 {
 
 

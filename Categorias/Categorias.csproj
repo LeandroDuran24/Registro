@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{024787A3-E891-47C8-A925-12352DB35E84}</ProjectGuid>
+    <ProjectGuid>{9BBFA570-D74B-462B-BC65-AE64A56CFB4E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Registro</RootNamespace>
-    <AssemblyName>Registro</AssemblyName>
+    <RootNamespace>Categorias</RootNamespace>
+    <AssemblyName>Categorias</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PublishUrl>publish\</PublishUrl>
@@ -68,33 +68,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\UsuariosBLL.cs" />
-    <Compile Include="DAL\UsuarioDb.cs" />
-    <Compile Include="Entidades\Usuarios.cs" />
+    <Compile Include="BLL\PeliculaBLL.cs" />
+    <Compile Include="CategoriaDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CategoriaDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CategoriaDb.cs" />
+    <Compile Include="Entidades\Peliculas.cs" />
+    <Compile Include="Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categoria.Designer.cs">
+      <DependentUpon>Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\Consultas\Consultas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Consultas\Consultas.Designer.cs">
       <DependentUpon>Consultas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dusuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dusuario.Designer.cs">
-      <DependentUpon>Dusuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UsuarioDbDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>UsuarioDbDataSet.xsd</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="UI\Consultas\Consultas.resx">
-      <DependentUpon>Consultas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dusuario.resx">
-      <DependentUpon>Dusuario.cs</DependentUpon>
+    <EmbeddedResource Include="Categoria.resx">
+      <DependentUpon>Categoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,7 +102,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="App.config" />
+    <EmbeddedResource Include="UI\Consultas\Consultas.resx">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="CategoriaDbDataSet.xsc">
+      <DependentUpon>CategoriaDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CategoriaDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CategoriaDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CategoriaDbDataSet.xss">
+      <DependentUpon>CategoriaDbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,25 +127,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="UsuarioDbDataSet.xsc">
-      <DependentUpon>UsuarioDbDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="UsuarioDbDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>UsuarioDbDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UsuarioDbDataSet.xss">
-      <DependentUpon>UsuarioDbDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase\UsuarioDb.mdf">
+    <Content Include="DataBase\CategoriaDb.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DataBase\UsuarioDb_log.ldf">
+    <Content Include="DataBase\CategoriaDb_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>UsuarioDb.mdf</DependentUpon>
+      <DependentUpon>CategoriaDb.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup />

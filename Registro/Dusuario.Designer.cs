@@ -127,7 +127,7 @@
             this.Elimbutton1.TabIndex = 10;
             this.Elimbutton1.Text = "Eliminar";
             this.Elimbutton1.UseVisualStyleBackColor = true;
-            Elimbutton1.Click += new System.EventHandler(Elimbutton1_Click);
+            this.Elimbutton1.Click += new System.EventHandler(this.Elimbutton1_Click);
             // 
             // Form1
             // 
@@ -145,7 +145,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 
