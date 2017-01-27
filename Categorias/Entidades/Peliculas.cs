@@ -4,7 +4,7 @@ namespace Categorias.Entidades
 {
     public class Peliculas
     {
-       [Key]
+         [Key]
         public int  CategoriaId { get; set; }
         public string  Descripcion { get; set; }
 

@@ -49,6 +49,11 @@ namespace Categorias.BLL
 
         }
 
+        internal static object Buscar(string v)
+        {
+            throw new NotImplementedException();
+        }
+
         internal static object Elimina(string text)
         {
             throw new NotImplementedException();
